@@ -67,23 +67,31 @@ nav {
     letter-spacing: 0;
 }
 
-.transform-container {
+.content-container {
     max-width: 100%;
-    height: 400px;
-    display: grid;
-    grid-template-columns: repeat(24, 53px);
-    grid-template-rows: repeat(6, 60px);
-    grid-auto-flow: column;
+    height: 410px;
 }
 
-.transform-image {
+/* .content-container-shrink {
+    height: 400px;
+    margin-top: -0.5em;
+} */
+
+.image-right {
     max-width: 50vw;
     height: auto;
     position: absolute;
     margin-left: 49vw;
 }
 
-.transform-message-container {
+.image-left {
+    max-width: 49vw;
+    height: auto;
+    position: absolute;
+    margin-right: 49vw;
+}
+
+.message-container-left {
     max-width: 35vw;
     height: auto;
     position: absolute;
@@ -91,29 +99,65 @@ nav {
     margin-top: 5em;
 }
 
-.transform-header {
-    font-family: 'Fraunces';
-    font-size: 3vw;
-    font-weight: bold;
-    color: black;
+.message-container-right {
+    max-width: 35vw;
+    height: auto;
+    position: absolute;
+    margin-left: 30em;
+    margin-top: 5em;
 }
 
-.transform-text {
+.message-container-low {
+    margin-top: 11em;
+}
+
+.section-header {
     font-family: 'Fraunces';
+    font-size: 3vw;
+    font-weight: 900;
+    color: hsl(198, 62%, 26%);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.section-message-body {
+    font-family: 'Barlow';
     font-size: 1.75vw;
-    color: black;
     word-wrap: normal;
+    color: hsl(210, 4%, 67%);
 }
 
 .transform-link {
-    font-family: 'Fraunces';
+    font-family: 'Barlow';
     font-weight: 600;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     width: fit-content;
-    color: black;
+    color: hsl(198, 62%, 26%);
 }
 
 .transform-link:hover {
     cursor: pointer;
     text-decoration: underline 5px yellow;
+}
+
+.standout-link {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 1.5vw;
+    width: fit-content;
+    color: hsl(198, 62%, 26%);
+}
+
+.standout-link:hover {
+    cursor: pointer;
+    text-decoration: underline 5px hsl(7, 99%, 70%);
+}
+
+.graphic-design-font-color {
+    color: hsl(167, 40%, 24%);
+}
+.graphic-design-font-opacity {
+    opacity: 0.7;
 }
